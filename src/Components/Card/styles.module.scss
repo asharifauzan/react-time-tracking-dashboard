@@ -57,7 +57,7 @@
     background-image: url('../../../public/images/icon-ellipsis.svg');
     background-repeat: no-repeat;
     background-position: center;
-    width: $font-size;
+    width: calc($font-size + 3px); // fit to icon svg
     height: $font-size;
     float: right;
   }
