@@ -1,0 +1,74 @@
+@import '../../variable';
+@import '../../App.module';
+
+.card {
+  width: 30%;
+}
+
+.card_header {
+  height: calc(40px + $sm-b-radius);
+  border-top-left-radius: $sm-b-radius;
+  border-top-right-radius: $sm-b-radius;
+
+  &.work, &.play, &.study, 
+  &.exercise, &.social, &.self_care {
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  &.work { 
+    background-color: $light-red;
+    background-image: url('../../../public/images/icon-work.svg');
+  };
+  &.play { 
+    background-color: $soft-blue;
+    background-image: url('../../../public/images/icon-play.svg');
+  };
+  &.study { 
+    background-color: $light-red;
+    background-image: url('../../../public/images/icon-study.svg');
+  };
+  &.exercise { 
+    background-color: $lime-green;
+    background-image: url('../../../public/images/icon-exercise.svg');
+  };
+  &.social { 
+    background-color: $violet;
+    background-image: url('../../../public/images/icon-social.svg');
+  };
+  &.self_care { 
+    background-color: $soft-orange;
+    background-image: url('../../../public/images/icon-self-care.svg');
+  };
+}
+
+
+.card_body {
+  background-color: $dark-blue;
+  border-radius: $sm-b-radius;
+  margin-top: -$sm-b-radius;
+  padding: 1.5rem;
+  
+  .card_title {
+    margin-bottom: 1.25rem;
+  }
+
+  .icon_ellipsis {
+    background-image: url('../../../public/images/icon-ellipsis.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: $font-size;
+    height: $font-size;
+    float: right;
+  }
+
+  h3 {
+    font-weight: normal;
+    font-size: 48px;
+    margin-bottom: .5rem;
+  }
+
+  span {
+    font-size: 12px;
+  }
+}
