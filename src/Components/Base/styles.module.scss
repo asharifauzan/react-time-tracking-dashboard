@@ -1,0 +1,13 @@
+@import '../../variable';
+
+.container {
+  display: flex;
+  width: 95%;
+  height: max-content;
+}
+
+@media screen and (min-width: $desktop) {
+  .container {
+    width: 80%;
+  }
+}
