@@ -1,0 +1,72 @@
+@import '../../../variable';
+
+.control_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile_wrapper {
+  background-color: $desaturated-blue;
+  border-radius: $sm-b-radius;
+  padding: $md-padding;
+  z-index: 1;
+  flex-grow: 1;
+
+  .avatar {
+    min-width: 20px;
+    min-height: 20px;
+    width: 45%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    border-radius: 100%;
+    background-color: $white;
+    margin-bottom: 3rem;
+  }
+
+  .avatar img {
+    width: 100%;
+    height: 100%;
+  }
+
+  p { color: $pale-blue; }
+
+  .name {
+    font-size: 32px;
+    margin-bottom: calc($sm-padding + $lg-padding);
+    display: inline-block;
+  }
+}
+
+.time_wrapper {
+  background-color: $dark-blue;
+  border-bottom-left-radius: $sm-b-radius;
+  border-bottom-right-radius: $sm-b-radius;
+  // height: 100%;
+  // flex-grow: 1;
+  margin-top: -$sm-b-radius;
+
+  .time_control {
+    margin-top: $sm-b-radius;
+    display: flex;
+    flex-direction: column;
+    padding: $md-padding;
+  }
+
+  .time_control .time_label {
+    color: $pale-blue;
+    padding-block: calc($sm-padding / 2);
+  }
+
+  .time_control .time_label:hover {
+    color: $white;
+    cursor: pointer;
+  }
+
+  .time_control .time_label.active {
+    color: $white;
+  }
+}
+
