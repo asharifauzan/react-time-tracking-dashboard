@@ -1,4 +1,4 @@
-import ProfilePic from '../../../../Assets/image-jeremy.png'
+import ProfilePic from '../../../Assets/image-jeremy.png'
 import styles from '../styles.module.scss'
 
 function Profile({name}) {

@@ -1,4 +1,4 @@
-import Card from '../../Card/Component'
+import Card from '../Card/Component'
 import styles from './styles.module.scss'
 
 // TODOl: separate the JSON

@@ -1,5 +1,5 @@
-import Schedule from './Schedule/Component'
-import Control from './Control/Component'
+import Schedule from '../Schedule/Component'
+import Control from '../Control/Component'
 import styles from './styles.module.scss'
 
 function Base() {
