@@ -5,8 +5,18 @@
   justify-content: space-between;
   align-content: space-between;
   flex-wrap: wrap;
-  width: 75%;
-  column-gap: $gap;
-  row-gap: $gap;
-  margin-left: $gap;
+  width: 100%;
+  row-gap: $sm-gap;
+  margin-top: $sm-gap;
+}
+
+@media screen and (min-width: $desktop) {
+  .activity_wrapper {
+    width: 75%;
+    margin-left: 0;
+    column-gap: $lg-gap;
+    margin-left: $lg-gap;
+    row-gap: $lg-gap;
+    margin-top: 0;
+  }
 }

@@ -1,9 +1,10 @@
 // device width
-$mobile             : 375;
-$desktop            : 1440;
+$mobile             : 375px;
+$desktop            : 1440px;
 
 // general
-$gap                : 30px;
+$sm-gap             : 20px;
+$lg-gap             : 30px;
 
 // color theme
 $light-red          : hsl(15, 100%, 70%);

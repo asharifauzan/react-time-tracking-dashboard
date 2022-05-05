@@ -14,7 +14,7 @@ function Card(props) {
           {props.activity.current}hrs
         </h3>
         <span className={styles.text_muted}>
-          Last {props.timemode.charAt(0).toUpperCase() + props.timemode.slice(1)} - {props.activity.previous}
+          Last {props.timemode.charAt(0).toUpperCase() + props.timemode.slice(1)} - {props.activity.previous}hrs
         </span>
       </div>
     </div>

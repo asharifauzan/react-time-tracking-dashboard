@@ -3,10 +3,12 @@
 .control_wrapper {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 100%;
 }
 
 .profile_wrapper {
+  display: flex;
+  align-items: center;
   background-color: $desaturated-blue;
   border-radius: $sm-b-radius;
   padding: $md-padding;
@@ -16,15 +18,15 @@
   .avatar {
     min-width: 20px;
     min-height: 20px;
-    width: 45%;
-    height: max-content;
+    height: 100px;
+    width: auto ;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 3px;
     border-radius: 100%;
     background-color: $white;
-    margin-bottom: 3rem;
+    margin-right: $sm-padding;
   }
 
   .avatar img {
@@ -35,8 +37,7 @@
   p { color: $pale-blue; }
 
   .name {
-    font-size: 32px;
-    margin-bottom: calc($sm-padding + $lg-padding);
+    font-size: 24px;
     display: inline-block;
   }
 }
@@ -52,7 +53,7 @@
   .time_control {
     margin-top: $sm-b-radius;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     padding: $md-padding;
   }
 
@@ -71,3 +72,28 @@
   }
 }
 
+@media screen and (min-width: $desktop) {
+  .control_wrapper {
+    width: 25%;
+  }
+
+  .profile_wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .avatar {
+      width: 45%;
+      height: auto;
+      margin-bottom: 3rem;
+      margin-right: 0;
+    }
+
+    .name {
+      font-size: 32px;
+    }
+  }
+
+  .time_control {
+    flex-direction: column;
+  }
+}

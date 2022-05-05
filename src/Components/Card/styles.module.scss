@@ -3,7 +3,7 @@
 
 .card {
   flex-grow: 1;
-  width: 29%;
+  width: 100%;
 }
 
 .card_header {
@@ -72,5 +72,11 @@
 
   span {
     font-size: 12px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .card {
+    width: 29%;
   }
 }

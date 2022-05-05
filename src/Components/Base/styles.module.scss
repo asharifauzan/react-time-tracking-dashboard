@@ -2,6 +2,7 @@
 
 .container {
   display: flex;
+  flex-direction: column;
   width: 95%;
   height: max-content;
 }
@@ -9,5 +10,6 @@
 @media screen and (min-width: $desktop) {
   .container {
     width: 80%;
+    flex-direction: row;
   }
 }
