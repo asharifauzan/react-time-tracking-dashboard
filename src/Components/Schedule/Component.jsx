@@ -107,18 +107,17 @@ const data = [
   }
 ]
 
-function Schedule() {
+function Schedule({timemode}) {
   return (
   <div className={styles.activity_wrapper}>
-    {/* TODO: make timeframes dynamic, daily | weekly */}
-    {
+    {  
       data.map((d, key)=> {
         return (
           <Card 
             key={key}
             title={d.title}
-            activity={d.timeframes.daily}
-            timemode="week"
+            activity={d.timeframes[timemode === 'day' ? 'daily' : timemode === 'week' ? 'weekly' : 'monthly' ]}
+            timemode={timemode}
           />
         )
       })

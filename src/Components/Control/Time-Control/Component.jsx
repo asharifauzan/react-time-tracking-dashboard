@@ -1,17 +1,10 @@
-import { useState } from 'react'
 import cx from 'classnames'
 import styles from '../styles.module.scss'
 
-function TimeControl() {
-  // set daily as default mode
-  const [ timemode, setTimemode ] = useState('day')
-
-  const switchMode = mode=> {
-    setTimemode(mode)
-  }
+function TimeControl(props) {
 
   const setActiveMode = mode=> {
-    return cx(styles.time_label, timemode === mode ? styles.active : null)
+    return cx(styles.time_label, props.timemode === mode ? styles.active : null)
   }
 
   return (
@@ -19,17 +12,17 @@ function TimeControl() {
       <div className={styles.time_control}>
         <span
           className={setActiveMode('day')} 
-          onClick={()=> switchMode('day')}>
+          onClick={()=> props.switchTimemode('day')}>
             Daily
         </span>
         <span
           className={setActiveMode('week')} 
-          onClick={()=> switchMode('week')}>
+          onClick={()=> props.switchTimemode('week')}>
             Weekly
         </span>
         <span
           className={setActiveMode('month')} 
-          onClick={()=> switchMode('month')}>
+          onClick={()=> props.switchTimemode('month')}>
             Monthly
         </span>
       </div>
